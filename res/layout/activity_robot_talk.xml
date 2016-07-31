@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#009990" >
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_title_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="智能聊天"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/talk_content_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/feedback_comment_modul"
+        android:layout_below="@+id/rl_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scrollbars="none" >
+    </ListView>
+    
+    <RelativeLayout
+        android:id="@+id/feedback_comment_modul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/yf_button_src" >
+
+        <ImageView
+            android:id="@+id/feedback_comment_send"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/feedback_comment"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/yf_btn_bkg"
+            android:contentDescription="@null"
+            android:padding="5dp"
+            android:src="@drawable/icon_send" />
+
+        <EditText
+            android:id="@+id/feedback_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/feedback_comment_send"
+            android:background="@null"
+            android:maxLines="3"
+            android:padding="15dp"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

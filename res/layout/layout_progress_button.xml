@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tool_bar"
+    android:layout_width="60dp"
+    android:layout_height="32dp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <ProgressBar
+        android:id="@+id/classify_pb_showprogress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:contentDescription="@string/app_name"
+        android:max="100"
+        android:progress="100"
+        android:progressDrawable="@drawable/probtn_state" />
+
+    <TextView
+       android:id="@+id/detail_tv_pbstate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:text="下载"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        />
+
+</RelativeLayout>

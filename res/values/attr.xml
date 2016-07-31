@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ShakingResultAnimation">
+        <attr name="centerCircleRadius" format="dimension" />
+ <!-- 中心圆大小 -->
+        <attr name="outCircleRadius" format="dimension" />
+ <!-- 外圆大小 -->
+        <attr name="ringRadius" format="dimension" />
+ <!-- 圆环大小 -->
+        <attr name="strokeWidth" format="dimension" />
+ <!-- 圆环线的宽度 -->
+        <attr name="centerCircleColor" format="color" />
+ <!-- 中心圆颜色 -->
+        <attr name="outCircleColor" format="color" />
+ <!-- 外圆颜色 -->
+        <attr name="ringColor" format="color" />
+ <!-- 圆环颜色 -->
+    </declare-styleable>
+
+</resources>

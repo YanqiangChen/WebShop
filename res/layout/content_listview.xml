@@ -1,0 +1,14 @@
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lv_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:divider="@null"
+    android:dividerHeight="@dimen/common_divider_height"
+    android:overScrollMode="never"
+    android:paddingEnd="@dimen/space_large"
+    android:paddingLeft="@dimen/space_large"
+    android:paddingRight="@dimen/space_large"
+    android:paddingStart="@dimen/space_large"
+    android:scrollbars="none" >
+</ListView>

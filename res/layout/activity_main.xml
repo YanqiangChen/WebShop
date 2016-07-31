@@ -1,0 +1,179 @@
+<com.myproject.view.DragLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_addcity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="30dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="50dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加城市" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.myproject.view.MyRelativeLayout
+        android:id="@+id/myRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eeeeee" >
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#009990" >
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_user_pre" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="什么软件"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_title"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rl_title"
+                android:layout_weight="1" >
+
+                <FrameLayout
+                    android:id="@+id/fr_fliping_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp" />
+
+                <FrameLayout
+                    android:id="@+id/fr_navigation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fr_fliping_banner"
+                    android:layout_margin="20dp" >
+                </FrameLayout>
+
+                <View
+                    android:id="@+id/split"
+                    android:layout_below="@+id/fr_navigation"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/split" />
+
+                <FrameLayout
+                    android:id="@+id/fr_grid_banners"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/split" >
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/main_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                </FrameLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/split" />
+
+            <RadioGroup
+                android:id="@+id/main_manage"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="0"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <RadioButton
+                    android:id="@+id/main_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/yf_btn_bkg"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableTop="@drawable/icon_choiceness_nor"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="首页"
+                    android:textColor="@color/gray" />
+
+                <RadioButton
+                    android:id="@+id/main_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/yf_btn_bkg"
+                    android:button="@null"
+                    android:drawableTop="@drawable/icon_classify_nor"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="精选"
+                    android:textColor="@color/gray" />
+
+                <RadioButton
+                    android:id="@+id/main_third"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/yf_btn_bkg"
+                    android:button="@null"
+                    android:drawableTop="@drawable/icon_rank_nor"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="精选"
+                    android:textColor="@color/gray" />
+
+                <RadioButton
+                    android:id="@+id/main_fourth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/yf_btn_bkg"
+                    android:button="@null"
+                    android:drawableTop="@drawable/icon_manage_nor"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="精选"
+                    android:textColor="@color/gray" />
+            </RadioGroup>
+        </LinearLayout>
+    </com.myproject.view.MyRelativeLayout>
+
+</com.myproject.view.DragLayout>

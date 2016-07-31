@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="vp_title_blue">#099ce9</color>
+    <color name="gray">#9a9a9a</color>
+    <color name="split">#dedede</color>
+    <color name="gray_line">#dcdcdc</color>
+    <!-- 粉绿色（主色系） -->
+    <color name="theme">#4991fa</color>
+    <color name="blue_pressed">#2d79eb</color>
+    <color name="blue_select">#334991fa</color>
+    <color name="green">#30AE76</color>
+    <color name="green_press">#2AAF78</color>
+    <color name="green_bg_btn">#23dd96</color>
+    <color name="black">#2a2a2a</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="button_press_color">#0a000000</color>
+    <color name="blue_hover">#088fd6</color>
+    <color name="activity_bkg">#f4f4f6</color>
+    <color name="yf_group_bkg_line_color">#cacaca</color>
+    <color name="yf_button_color">#22c458</color>
+    <color name="yf_app_name_color">#2a2a2a</color>
+    <color name="yf_app_size_color">#9a9a9a</color>
+    <color name="yf_app_brief_color">#898989</color>
+    <color name="yf_rank_text_01">#ff4552</color>
+    <color name="yf_rank_text_02">#fe9d00</color>
+    <color name="yf_rank_text_03">#35b7fe</color>
+    <color name="bg_action_bar">#eeeeee</color>
+    <color name="gray_pressed">#cccccc</color>
+    <color name="bg_gray">#f0f0f0</color>
+    <color name="purple2">#a24fe4</color>
+    <color name="orange">#ff7220</color>
+    <color name="orange_pressed">#f75d05</color>
+    <!-- 引导页 -->
+    <color name="blue">#ff448efd</color>
+    <color name="yellow">#ffe247</color>
+    <color name="red_pressed">#e05851</color>
+    <color name="red">#f9625b</color>
+    <color name="green_center_circle">#6622c485</color>
+    <color name="green_out_circle">#1922c485</color>
+    <color name="gray_ring">#dcdcdc</color>
+    <color name="dark_red_pressed">#ba1c22</color>
+    <color name="dark_red">#e71f19</color>
+    <color name="white_shade">#88ffffff</color>
+
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:shaking="http://schemas.android.com/apk/res/com.example.weatherreport"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_shake_result"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <com.myproject.frame.view.animation.ShakingResultView
+            android:id="@+id/sr_shake_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            shaking:centerCircleColor="@color/green_center_circle"
+            shaking:centerCircleRadius="51dp"
+            shaking:outCircleColor="@color/green_out_circle"
+            shaking:outCircleRadius="91dp"
+            shaking:ringColor="@color/gray_ring"
+            shaking:ringRadius="118dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="120dp"
+        android:text="不感兴趣，换一组"
+        android:textSize="16sp" />
+
+</LinearLayout>
